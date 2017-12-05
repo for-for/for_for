@@ -1,4 +1,4 @@
-package jiaotanbao.web;
+package jiaobantao.web;
 
 import org.springframework.stereotype.Controller;
 
