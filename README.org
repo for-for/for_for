@@ -1,0 +1,6 @@
+* for_for
+
+* TO BE DONE
+** TODO 配置数据库链接
+** TODO 创建Account数据库
+** TODO 创建控制器，实现注册帐号，查询帐号
