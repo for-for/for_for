@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/for_for.iml" filepath="$PROJECT_DIR$/.idea/for_for.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzshare/hzshare.iml" filepath="$PROJECT_DIR$/hzshare/hzshare.iml" />
     </modules>
   </component>
 </project>

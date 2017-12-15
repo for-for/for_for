@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hzshare:war">
+    <output-path>$PROJECT_DIR$/hzshare/target</output-path>
+    <root id="archive" name="hzshare.war">
+      <element id="artifact" artifact-name="hzshare:war exploded" />
+    </root>
+  </artifact>
+</component>
