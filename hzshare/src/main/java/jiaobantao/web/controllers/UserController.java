@@ -1,4 +1,4 @@
-package jiaobantao.web;
+package jiaobantao.web.controllers;
 
 import jiaobantao.data.config.UserDAO;
 import jiaobantao.data.model.User;

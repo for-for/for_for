@@ -4,14 +4,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
          http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
- <!-- Set root
-context
-location
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/beans-app.xml</param-value>
-  </context-param>
-  -->
 
+  <!-- register ContextLoaderListener
+       Set root context location
+       config xml location about spring
+  -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/beans-app.xml</param-value>
+    </context-param>
+
+    <!-- register DispatcherServlet-->
+    <servlet>
+        <servlet-name>appServlet</servlet-name> <!-- look bean definition in /WEB-INF/appServlet-servlet.xml-->
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!-- map DispatcherServlet to / -->
+    <servlet-mapping>
+        <servlet-name>appServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
   
 </web-app>
