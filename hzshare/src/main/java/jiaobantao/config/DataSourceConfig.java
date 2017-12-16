@@ -12,8 +12,8 @@ public class DataSourceConfig {
     @Bean
     public DataSource dataSource() {
         BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setDriverClassName("org.h2.Driver");
-        basicDataSource.setUrl("jdbc:h2:tcp://localhost:5432/~/kk");
+        basicDataSource.setDriverClassName("org.postgresql.Driver");
+        basicDataSource.setUrl("jdbc:postgresql://localhost:5432/kk");
         basicDataSource.setUsername("test");
         basicDataSource.setPassword("123456");
         basicDataSource.setInitialSize(5);
